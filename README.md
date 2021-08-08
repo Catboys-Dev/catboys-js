@@ -82,3 +82,5 @@ returns
 { url: 'https://cdn.catboys.com/images/image_31.jpg' }
 ```
 
+## Credit
+[Nekos.life](https://nekos.life) - base code for this package and inspiration to create catboys.com
