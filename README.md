@@ -1,5 +1,13 @@
 # Catboys-js
 
+[![npm](https://img.shields.io/npm/v/catboys.svg)](https://www.npmjs.com/package/catboys)
+[![npm](https://img.shields.io/npm/dt/catboys.svg?maxAge=3600)](https://www.npmjs.com/package/catboys)
+[![install size](https://packagephobia.now.sh/badge?p=catboys)](https://packagephobia.now.sh/result?p=catboys)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Patreon](https://img.shields.io/badge/Donate-Patreon-orange.svg)](https://www.patreon.com/CatboyLounge)
+ 
+[![NPM](https://nodei.co/npm/catboys.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/catboys/)
+
 ## Installation
 ```
 npm i -s catboys
