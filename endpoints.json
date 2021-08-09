@@ -1,7 +1,9 @@
 {
   "sfw": {
-    "img": "/img",
-    "catboy": "/catboy",
+    "img": "/img/random",
+    "catboy": "/img/catboy",
+    "yaoi": "/img/yaoi",
+    "response": "/catboy",
     "8Ball": "/8ball"
   }
 }
