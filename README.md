@@ -23,6 +23,7 @@ Official wrapper for the catboys.com API! Very small install size with no extern
 | `yaoi` | Get a URL of a yaoi image |
 | `response`| Get response of a virtual catboy |
 | `8Ball` | Sends the text and replies with a `text` as a response to the magic 8Ball and an image as well.|
+| `dice` | Sends the text and replies with a `text` as an integer response to the virtual 6-sided dice and an image as well.|
 
 
 All of the endpoints but the ones marked with `text`, except 8Ball in the description will return JSON: `{ url: <theURL>}`.
@@ -32,8 +33,9 @@ All of the endpoints but the ones marked with `text`, except 8Ball in the descri
 `sfw.yaoi` will return JSON `{url: <image url>}`
 `sfw.response` will return JSON: `{cat: <catemoji>}`
 `sfw.8Ball` will return JSON `{response: <8Ball response string>, url: <URL to a matching 8Ball image>}`
+`sfw.dice` will return JSON `{response: <dice response string>, url: <URL to a matching dice image>}`
 
-As of now, `8Ball` is the only one with query parameters. It requires an object containing the parameter, and the key should be the value.
+As of now, `8Ball` and `dice` are the only ones with query parameters. It requires an object containing the parameter, and the key should be the value.
 `{text: 'Some example text here.}` 
 
 ## Typings

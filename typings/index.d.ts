@@ -6,6 +6,7 @@ declare class CatboyClient {
     yaoi():Promise<CatboyClient.CatboyRequestResults>;
     response():Promise<CatboyClient.CatboyChatResults>;
     "8Ball"(opts: CatboyClient.CatboyQueryParams):Promise<CatboyClient.CatboyChatResults>;
+    "dice"(opts: CatboyClient.CatboyQueryParams):Promise<CatboyClient.CatboyChatResults>;
   }
 }
 
