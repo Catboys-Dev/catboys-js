@@ -2,8 +2,6 @@
 declare class CatboyClient {
   sfw: {
     img():Promise<CatboyClient.CatboyRequestResults>;
-    catboy():Promise<CatboyClient.CatboyRequestResults>;
-    yaoi():Promise<CatboyClient.CatboyRequestResults>;
     baka():Promise<CatboyClient.CatboyRequestResults>;
     response():Promise<CatboyClient.CatboyChatResults>;
     "8Ball"(opts: CatboyClient.CatboyQueryParams):Promise<CatboyClient.CatboyChatResults>;
