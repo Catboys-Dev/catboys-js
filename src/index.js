@@ -1,5 +1,5 @@
 const { get } = require(`https`);
-const { URL, URLSearchParams } = require(`url`);
+const { URL } = require(`url`);
 const endpoints = require(`../endpoints.json`);
 
 const getContent = (URL) => {

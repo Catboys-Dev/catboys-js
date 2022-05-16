@@ -27,10 +27,6 @@ declare class CatboyClient {
 }
 
 declare namespace CatboyClient {
-    export interface CatboyQueryParams {
-        text: string;
-    }
-
     export interface CatboyImageResults {
         url: string;
         artist: string;
