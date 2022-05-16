@@ -35,9 +35,8 @@ module.exports = class CatboyClient {
     constructor() {
         const baseURL = `https://api.catboys.com/`;
         Object.keys(endpoints).forEach(async (endpoint) => {
-            this[endpoint] = async (queryParams = ``) => {
+            this[endpoint] = async () => {
                 let url = new URL(`${baseURL}${endpoints[endpoint]}`);
-                if (queryParams !== ``) url.search = new URLSearchParams(queryParams);
                 return await getContent(url.toString());
             };
         });
