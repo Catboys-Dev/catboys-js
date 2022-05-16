@@ -1,4 +1,8 @@
-# catboys.js
+# Catboys.js
+
+## The official wrapper for the catboys.com API! Very small in size with no external dependencies.
+
+---
 
 [![npm](https://img.shields.io/npm/v/catboys.svg)](https://www.npmjs.com/package/catboys)
 [![npm](https://img.shields.io/npm/dt/catboys.svg?maxAge=3600)](https://www.npmjs.com/package/catboys)
@@ -11,94 +15,37 @@
 ## Installation
 
 ```
-npm i -s catboys
+npm install catboys
 ```
 
-Official wrapper for the catboys.com API! Very small install size with no external dependencies.
+## Functions
 
-### SFW
+| Function   | Description                                                                                | Returns (JSON)                                                              |
+| ---------- | ------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------- |
+| `img`      | Get a URL of a catboy image                                                                | `{url: <image url>}`                                                        |
+| `baka`     | Get a URL of an image representing baka                                                    | `{url: <image url>}`                                                        |
+| `response` | Get a response of a virtual catboy                                                         | `{cat: <catemoji>}`                                                         |
+| `8Ball`    | Replies with text as a response to the magic 8Ball and a matching image.                   | `{response: <8Ball response string>, url: <URL to a matching 8Ball image>}` |
+| `dice`     | Replies with text as an integer response to the virtual 6-sided dice and a matching image. | `{response: <dice response string>, url: <URL to a matching dice image>}`   |
 
-| Function   | Description                                                                                                       |
-| ---------- | ----------------------------------------------------------------------------------------------------------------- |
-| `img`      | Get a URL of a catboy image                                                                                       |
-| `baka`     | Get a URL of an image representing baka                                                                           |
-| `response` | Get response of a virtual catboy                                                                                  |
-| `8Ball`    | Sends the text and replies with a `text` as a response to the magic 8Ball and an image as well.                   |
-| `dice`     | Sends the text and replies with a `text` as an integer response to the virtual 6-sided dice and an image as well. |
-
-All of the endpoints but the ones marked with `text`, except 8Ball in the description will return JSON: `{ url: <theURL>}`.
-
-`sfw.img` will return JSON `{url: <image url>}`
-`sfw.baka` will return JSON `{url: <image url>}`
-`sfw.response` will return JSON: `{cat: <catemoji>}`
-`sfw.8Ball` will return JSON `{response: <8Ball response string>, url: <URL to a matching 8Ball image>}`
-`sfw.dice` will return JSON `{response: <dice response string>, url: <URL to a matching dice image>}`
-
-As of now, `8Ball` and `dice` are the only ones with query parameters. It requires an object containing the parameter, and the key should be the value.
-`{text: 'Some example text here.}`
-
-## Typings
-
-I've added a typings file and will be working to improve it. This allows editors like VSC to use intellisense/autocomplete to suggest functions and help out with parameters and to see what you'll be receiving as a result of function calls.
-
-## Examples
-
-Await/Async example
+## Example
 
 ```js
-const client = require("catboys");
+const client = require(`catboys`);
 const catboy = new client();
 
 async function test() {
-    console.log(await catboy.sfw.img());
+    console.log(await catboy.img());
 }
 
 test();
 ```
 
-returns:
+Which returns:
 
-```js
+```json
 {
-    url: "https://cdn.catboys.com/images/image_31.jpg";
-}
-```
-
-Promise example
-
-```js
-const client = require("catboys");
-const catboy = new client();
-
-catboy.sfw.catboy().then((catboy) => console.log(catboy));
-```
-
-returns
-
-```js
-{
-    catboy: "uwu";
-}
-```
-
-## Advanced examples
-
-Here I'll show you how to import `sfw`.
-
-Importing `sfw`
-
-```js
-const client = require("catboys");
-const { sfw } = new client();
-
-sfw.img().then((catboy) => console.log(catboy));
-```
-
-returns
-
-```js
-{
-    url: "https://cdn.catboys.com/images/image_31.jpg";
+    "url": "https://cdn.catboys.com/images/image_31.jpg"
 }
 ```
 
