@@ -1,9 +1,7 @@
 {
-    "sfw": {
-        "img": "/img",
-        "baka": "/baka",
-        "response": "/catboy",
-        "8Ball": "/8ball",
-        "dice": "/dice"
-    }
+    "img": "/img",
+    "baka": "/baka",
+    "response": "/catboy",
+    "8Ball": "/8ball",
+    "dice": "/dice"
 }
