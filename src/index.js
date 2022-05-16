@@ -39,6 +39,14 @@ module.exports = class CatboyClient {
                 let url = new URL(`${baseURL}${endpoints[endpoint]}`);
                 return await getContent(url.toString());
             };
+
+            this.sfw[endpoint] = async () => {
+                let endpoint = (endpoint !== `image`) ? endpoint : `img`;
+                let url = new URL(`${baseURL}${endpoints[endpoint]}`);
+                return await getContent(url.toString());
+            };
         });
     }
+
+    
 };
