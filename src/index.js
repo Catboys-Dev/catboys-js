@@ -32,21 +32,24 @@ const getContent = (URL) => {
 };
 
 module.exports = class CatboyClient {
+    sfw = {};
+
     constructor() {
         const baseURL = `https://api.catboys.com/`;
         Object.keys(endpoints).forEach(async (endpoint) => {
-            this[endpoint] = async () => {
-                let url = new URL(`${baseURL}${endpoints[endpoint]}`);
-                return await getContent(url.toString());
-            };
+            if (endpoint !== `img`) {
+                this[endpoint] = async () => {
+                    let url = new URL(`${baseURL}${endpoints[endpoint]}`);
+                    return await getContent(url.toString());
+                };
+            }
 
-            this.sfw[endpoint] = async () => {
-                let endpoint = (endpoint !== `image`) ? endpoint : `img`;
-                let url = new URL(`${baseURL}${endpoints[endpoint]}`);
-                return await getContent(url.toString());
-            };
+            if (endpoint !== `image`) {
+                this.sfw[endpoint] = async () => {
+                    let url = new URL(`${baseURL}${endpoints[endpoint]}`);
+                    return await getContent(url.toString());
+                };
+            }
         });
     }
-
-    
 };
