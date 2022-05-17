@@ -1,10 +1,9 @@
 ---
 name: Feature request
 about: Suggest an idea for this package
-title: ''
-labels: ''
-assignees: ''
-
+title: ""
+labels: ""
+assignees: ""
 ---
 
 **Describe new features you want**

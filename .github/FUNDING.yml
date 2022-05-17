@@ -1,3 +1,8 @@
 patreon: CatboyLounge
 ko_fi: Catboys
-custom: ['https://www.buymeacoffee.com/kristiankramer', 'https://paypal.me/CatboyLounge', 'https://www.patreon.com/Catboys']
+custom:
+    [
+        "https://www.buymeacoffee.com/kristiankramer",
+        "https://paypal.me/CatboyLounge",
+        "https://www.patreon.com/Catboys",
+    ]

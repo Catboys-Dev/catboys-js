@@ -1,24 +1,28 @@
 {
-  "name": "catboys",
-  "version": "1.0.5",
-  "description": "JS wrapper for the Catboys API",
-  "main": "index.js",
-  "typings": "./typings/index.d.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Catboys-Dev/catboys-js.git"
-  },
-  "keywords": [
-    "catboys",
-    "catboys.com"
-  ],
-  "author": "Kristian Kramer",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Catboys-Dev/catboys-js/issues"
-  },
-  "homepage": "https://github.com/Catboys-Dev/catboys-js#readme"
+    "name": "catboys",
+    "version": "1.1.0",
+    "description": "JS wrapper for the Catboys API",
+    "main": "src/index.js",
+    "typings": "./typings/index.d.ts",
+    "scripts": {
+        "format": "prettier -w ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Catboys-Dev/catboys-js.git"
+    },
+    "keywords": [
+        "catboy",
+        "catboys",
+        "catboys.com"
+    ],
+    "author": "Catboys.com",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Catboys-Dev/catboys-js/issues"
+    },
+    "homepage": "https://github.com/Catboys-Dev/catboys-js#readme",
+    "devDependencies": {
+        "prettier": "^2.6.2"
+    }
 }

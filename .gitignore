@@ -1,2 +1,3 @@
-test/*
-.idea/* 
+# Nodejs
+node_modules/
+package-lock.json
